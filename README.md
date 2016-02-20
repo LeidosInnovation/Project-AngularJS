@@ -1,4 +1,7 @@
 # Project-AngularJS
+#Author 
+#Shailesh Gavathe
+#GIS Developer
 
 AngularJS Sessions Material will reside here
 
@@ -20,3 +23,5 @@ git commit -m "commit what"
 git push
 
 git sync 
+
+last updated --  02/20/2016

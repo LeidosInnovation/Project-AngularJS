@@ -1,7 +1,7 @@
 # Project-AngularJS
-#Author 
-#Shailesh Gavathe
-#GIS Developer
+Author 
+Shailesh Gavathe
+GIS Developer
 
 AngularJS Sessions Material will reside here
 

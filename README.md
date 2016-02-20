@@ -8,3 +8,15 @@ Training contains 5 different session with code examples with the demonstration 
 
 Plunker for this project here.
 http://embed.plnkr.co/A6oBjqDwMcjMmM7qupx4/
+
+Important Git Commands
+
+git init
+
+git add .
+
+git commit -m "commit what"
+
+git push
+
+git sync 

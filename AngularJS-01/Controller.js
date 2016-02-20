@@ -5,6 +5,14 @@ var app = angular.module('angularjsApp');
 app.controller('mainController', function ($scope) {
     // create a message to display in our view
     $scope.message = 'I am main one';
+
+    //sample list
+    $scope.users = [ 
+   {"name": "Dominic", "IsOnline": true}, 
+   { "name": "Naveen", "IsOnline": true },
+   { "name": "Shailesh", "IsOnline": false }
+    ];
+
 });
 
 // create the controller and inject Angular's $scope

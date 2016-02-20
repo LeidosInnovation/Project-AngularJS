@@ -1,13 +1,12 @@
-<i>scope bind data</i>
+<i ng-show="doNotShow">scope bind data</i>
 <div class="jumbotron text-center">
     <h1>Home Page</h1>
     <p>{{ message }}</p>
 </div>
-
-<i>ng-repeat plus filters</i>
-<div class="jumbotron text-left"> 
+<i ng-show="doNotShow">ng-repeat plus filters</i>
+<div class="jumbotron text-left">
     <ul>
-        <input type="text" value="Shailesh" ng-model="searchBox" />
+        <input type="text" value="Shailesh" ng-model="searchBox" placeholder="Search" />
         <li ng-repeat="user in users | filter:searchBox:user.name | filter:true:user.IsOnline">
             {{user.name}} {{user.status}}
         </li>

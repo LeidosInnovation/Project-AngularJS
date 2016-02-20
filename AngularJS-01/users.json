@@ -1,0 +1,10 @@
+﻿[{
+    "name": "Dominic",
+    "IsOnline": true
+  }, {
+    "name": "Naveen",
+    "IsOnline": true
+  }, {
+    "name": "Shailesh",
+    "IsOnline": false
+}]

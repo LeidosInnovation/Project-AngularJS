@@ -9,9 +9,6 @@ Repository contains Slides along with the souce code.
 
 Training contains 5 different session with code examples with the demonstration of project.
 
-Plunker for this project here.
-http://embed.plnkr.co/A6oBjqDwMcjMmM7qupx4/
-
 Important Git Commands
 
 git init
@@ -24,4 +21,4 @@ git push
 
 git sync 
 
-last updated --  02/20/2016
+last updated --  02/21/2016

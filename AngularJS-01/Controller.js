@@ -1,4 +1,4 @@
-// create the module and name it scotchApp
+// create the module and name it App
 var app = angular.module('angularjsApp');
 
 // create the controller and inject Angular's $scope
@@ -10,12 +10,15 @@ app.controller('mainController', function ($scope) {
     //sample list
     $scope.users = [{
         "name": "Dominic",
+        "status": "online",
         "IsOnline": true
     }, {
         "name": "Naveen",
+        "status": "online",
         "IsOnline": true
     }, {
         "name": "Shailesh",
+        "status": "offline",
         "IsOnline": false
     }];
 

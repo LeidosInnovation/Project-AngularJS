@@ -7,7 +7,7 @@
 <div class="jumbotron text-left">
     <ul>
         <input type="text" value="Shailesh" ng-model="searchBox" placeholder="Search" />
-        <li ng-repeat="user in users | filter:searchBox:user.name | filter:true:user.IsOnline">
+        <li ng-repeat="user in users | filter:searchBox:user.name | filter:true:user.IsOnline"> <!--customFilter:'online'-->
             {{user.name}} {{user.status}}
         </li>
     </ul>

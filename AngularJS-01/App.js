@@ -11,12 +11,6 @@ app.config(function ($routeProvider) {
 		    controller: 'mainController'
 		})
 
-        // route for the home page
-        .when('/', {
-            templateUrl: 'Home.html',
-            controller: 'homeController'
-        })
-
         // route for the about page
         .when('/about', {
             templateUrl: 'About.html',

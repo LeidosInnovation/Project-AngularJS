@@ -9,18 +9,24 @@ app.controller('mainController', function ($scope) {
 
     //sample list
     $scope.users = [{
-        "name": "Dominic",
-        "status": "online",
-        "IsOnline": true
-    }, {
-        "name": "Naveen",
-        "status": "online",
-        "IsOnline": true
-    }, {
-        "name": "Shailesh",
-        "status": "offline",
-        "IsOnline": false
-    }];
+      "name": "Dominic",
+      "status": "online",
+      "IsOnline": true
+  },
+  {
+      "name": "Naveen",
+      "status": "online",
+      "IsOnline": true
+  },
+  {
+      "name": "Shailesh",
+      "status": "offline",
+      "IsOnline": false
+  }, {
+      "name": "Naren",
+      "status": "offline",
+      "IsOnline": false
+  }];
 
 });
 
@@ -54,9 +60,18 @@ app.controller('mainControllerWithService', function ($scope, userDataService) {
 });
 
 // directive sample controller, it is not needed but showing it for the model and message
-app.controller('directiveController', function ($scope) {
-    // create a message to display in our view
-    $scope.myVal = 'Directive is here, and i am here too!!!';
+app.controller('directiveController', function ($scope, userDataService) {
+    //sample list
+    $scope.users = [];
+
+    $scope.user = "Munna";
+    $scope.status = "Nawaab";
+
+    var promise = userDataService.getUsers();
+    promise.then(function (users) {
+        console.log(users.data);
+        $scope.users = users.data;
+    });
 });
 
 

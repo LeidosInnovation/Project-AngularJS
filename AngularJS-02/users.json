@@ -1,21 +1,23 @@
-﻿[
-  {
-    "name": "Dominic",
-    "status": "online",
-    "IsOnline": true
+﻿[{
+      "name": "Dominic",
+      "status": "online",
+      "IsOnline": true,
+      "score": "100"
   },
   {
-    "name": "Naveen",
-    "status": "online",
-    "IsOnline": true
+      "name": "Naveen",
+      "status": "online",
+      "IsOnline": true,
+      "score": "80"
   },
   {
-    "name": "Shailesh",
-    "status": "offline",
-    "IsOnline": false
-  },{
-    "name": "Naren",
-    "status": "offline",
-    "IsOnline": false
-}
-]
+      "name": "Shailesh",
+      "status": "offline",
+      "IsOnline": false,
+      "score": "50"
+  }, {
+      "name": "Naren",
+      "status": "offline",
+      "IsOnline": false,
+      "score": "100"
+}]

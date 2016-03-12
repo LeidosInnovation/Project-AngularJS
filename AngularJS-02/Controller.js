@@ -11,21 +11,25 @@ app.controller('mainController', function ($scope) {
     $scope.users = [{
       "name": "Dominic",
       "status": "online",
-      "IsOnline": true
+      "IsOnline": true,
+      "score": "100"
   },
   {
       "name": "Naveen",
       "status": "online",
-      "IsOnline": true
+      "IsOnline": true,
+      "score": "80"
   },
   {
       "name": "Shailesh",
       "status": "offline",
-      "IsOnline": false
+      "IsOnline": false,
+      "score": "50"
   }, {
       "name": "Naren",
       "status": "offline",
-      "IsOnline": false
+      "IsOnline": false,
+      "score": "100"
   }];
 
 });

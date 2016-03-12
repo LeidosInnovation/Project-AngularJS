@@ -1,13 +1,21 @@
-﻿[{
+﻿[
+  {
     "name": "Dominic",
     "status": "online",
     "IsOnline": true
-  }, {
+  },
+  {
     "name": "Naveen",
     "status": "online",
     "IsOnline": true
-  }, {
+  },
+  {
     "name": "Shailesh",
     "status": "offline",
     "IsOnline": false
-}]
+  },{
+    "name": "Naren",
+    "status": "offline",
+    "IsOnline": false
+}
+]

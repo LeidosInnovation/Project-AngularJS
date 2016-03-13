@@ -5,9 +5,14 @@ var app = angular.module('angularjsApp');
 app.directive('mydirectiveWithController', function () {
     return {
         template: '<b>User:  </b>    {{user}}<br /> <b>Status:  </b> {{status}} <br> ' +
-        '<h2></h2><div class="label label-danger" ng-repeat="user in users">{{user.name}}</div>' +
-        '<br><div class="label label-success" ng-repeat="user in users">{{user.status}}</div>' +
-        '<br><div class="label label-danger" ng-repeat="user in users">{{user.IsOnline}}</div>',
+        '<h2></h2><div ng-repeat="user in users">' +
+        '<div ng-if="true">' +
+        '<div class="alert alert-success">{{user.name}} | IsOnline => {{user.IsOnline}} | Score => {{user.score}}</div>' +
+        '</div>' +
+         '<div ng-if="false">' +
+        '<div class="alert alert-info">{{user.name}} | IsOnline => {{user.IsOnline}} | Score => {{user.score}}</div>' +
+        '</div>' +
+        '</div>',
         controller: "directiveController", //Notice embed a controller in the directive
         link: function ($scope, element, attrs) {
             element.bind('mouseenter', function () {

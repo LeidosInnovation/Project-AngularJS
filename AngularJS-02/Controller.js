@@ -68,6 +68,10 @@ app.controller('directiveController', function ($scope, userDataService) {
     //sample list
     $scope.users = [];
 
+    $scope.functionNgTest = function (item) {
+        console.log(item);
+    };
+
     $scope.user = "Munna";
     $scope.status = "Nawaab";
 

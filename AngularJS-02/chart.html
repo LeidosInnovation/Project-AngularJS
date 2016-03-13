@@ -1,0 +1,25 @@
+<div class="jumbotron text-center">
+     <h1>Chart With Table Page</h1>
+</div>
+<nvd3 options="options" data="data"></nvd3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>IsOnline</th>
+            <th>Score</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in data">
+            <td>{{item.name}}</td>
+            <td>{{item.status}}</td>
+            <td>{{item.IsOnline}}</td>
+            <td>{{item.score}}</td>
+            <td><button class="btn btn-primary" ng-click="edit(item)">Edit</button></td>
+        </tr>
+    </tbody>
+</table>

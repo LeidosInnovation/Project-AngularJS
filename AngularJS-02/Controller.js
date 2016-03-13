@@ -79,3 +79,75 @@ app.controller('directiveController', function ($scope, userDataService) {
 });
 
 
+// the dialog is injected in the specified controller
+//function EditCtrl($scope, item, dialog) {
+app.controller("EditorCtrl", function ($scope, item, dialog) {
+    $scope.item = item;
+
+    $scope.save = function () {
+        dialog.close($scope.item);
+    };
+
+    $scope.close = function () {
+        dialog.close(undefined);
+    };
+});
+
+// directive chart controller, it is not needed but showing it for the model and message
+app.controller('chartController', function ($scope, userDataService, $dialog) {
+    //sample list
+    $scope.data = [];
+
+   var colors = ["red", "green", "blue", "lightsalmon"];
+    $scope.options = {
+        chart: {
+            type: 'pieChart',
+            height: 500,
+            x: function (d) { return d.name; },
+            y: function (d) { return d.score; },
+            color: function (d, i) {
+                return (d.data && d.data.color) || colors[i % colors.length]
+            },
+            showLabels: true,
+            transitionDuration: 500,
+            labelThreshold: 0.01,
+            legend: {
+                margin: {
+                    top: 5,
+                    right: 35,
+                    bottom: 5,
+                    left: 0
+                }
+            }
+        }
+    };
+
+    var dialogOptions = {
+        controller: "EditorCtrl",
+        templateUrl: 'chart-tableEditor.html'
+    };
+
+    //dialog edit
+    $scope.edit = function (item) {
+
+        var itemToEdit = item;
+
+        $dialog.dialog(angular.extend(dialogOptions, { resolve: { item: angular.copy(itemToEdit) } }))
+          .open()
+          .then(function (result) {
+              if (result) {
+                  angular.copy(result, itemToEdit);
+              }
+              itemToEdit = undefined;
+          });
+    };
+
+
+    //service inject and promise
+    var promise = userDataService.getUsers();
+    promise.then(function (users) {
+        console.log(users.data);
+        $scope.data = users.data;
+    });
+});
+

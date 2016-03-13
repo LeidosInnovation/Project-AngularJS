@@ -1,0 +1,15 @@
+<div>
+    <div class="modal-header">
+        <h1>Edit {{item.name}}</h1>
+    </div>
+    <div class="modal-body">
+        <p><input ng-model="item.name" /></p>
+        <p><input ng-model="item.status" /></p>
+        <p><input ng-model="item.IsOnline" /></p>
+        <p><input ng-model="item.score" /></p>
+    </div>
+    <div class="modal-footer">
+        <button ng-click="save()" class="btn btn-primary">Save</button>
+        <button ng-click="close()" class="btn">close</button>
+    </div>
+</div>

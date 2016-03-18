@@ -6,10 +6,10 @@ app.directive('mydirectiveWithController', function () {
     return {
         template: '<b>User:  </b>    {{user}}<br /> <b>Status:  </b> {{status}} <br> ' +
         '<h2></h2><div ng-repeat="user in users">' +
-        '<div ng-if="true">' +
+        "<div ng-if=\"user.status == 'online' \">" +
         '<div class="alert alert-success">{{user.name}} | IsOnline => {{user.IsOnline}} | Score => {{user.score}}</div>' +
         '</div>' +
-         '<div ng-if="false">' +
+        "<div ng-if=\"user.status == 'offline' \">" +
         '<div class="alert alert-info">{{user.name}} | IsOnline => {{user.IsOnline}} | Score => {{user.score}}</div>' +
         '</div>' +
         '</div>',

@@ -3,24 +3,31 @@
 <html ng-app="angularjsApp">
 
 <head>
+    <meta charset="utf-8">  <!-- it's important for d3.js -->
     <!-- styles -->
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <!--<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">-->
+    <link href="bower_components/bootstrap-css/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
-    <link rel="stylesheet" href="https://rawgit.com/novus/nvd3/v1.1.15-beta/nv.d3.min.css" />
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
 
     <!-- js -->
     <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.1.0.js"></script>-->   
-   
+    <!--<script src="https://rawgit.com/mbostock/d3/master/d3.min.js"></script>
+    <script src="https://rawgit.com/novus/nvd3/v1.1.15-beta/nv.d3.min.js"></script>
+    <script src="https://rawgit.com/krispo/angular-nvd3/v0.1.1/dist/angular-nvd3.js"></script>-->
+
+    
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.1.0.js"></script>
-    <script src="https://rawgit.com/mbostock/d3/master/d3.min.js"></script>
-    <script src="https://rawgit.com/novus/nvd3/v1.1.15-beta/nv.d3.min.js"></script>
-    <script src="https://rawgit.com/krispo/angular-nvd3/v0.1.1/dist/angular-nvd3.js"></script>
+    <!--<script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>-->
 
-
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+ 
     <script src="App.js"></script>
     <script src="Directives.js"></script>
     <script src="services.js"></script>

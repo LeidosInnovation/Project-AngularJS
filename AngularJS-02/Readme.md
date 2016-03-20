@@ -11,4 +11,8 @@ Excellent resources here.
 https://angular-ui.github.io/bootstrap/
 
 For Bower and Packages information read this.
+//Install git from msysgit (msysgit.github.io)
+//pick default except what is shown in the link below
+  //Run git from windows command prompt
+//Install BOWER using npm install -g bower
 https://msdn.microsoft.com/en-us/magazine/mt573714.aspx

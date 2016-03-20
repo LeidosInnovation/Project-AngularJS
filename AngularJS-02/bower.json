@@ -1,0 +1,43 @@
+{
+  "name": "angularjs-02",
+  "authors": [
+    "sgavathe <sgavathe@gmail.com>"
+  ],
+  "description": "packages for angularjs tutorial",
+  "main": "app.js",
+  "moduleType": [
+    "amd"
+  ],
+  "dependencies": {
+    "angular": "~1.2.25",
+    "angular-route": "~1.2.25",
+    "bootstrap-css": "~3.3.4",
+    "d3": "~3.5.16",
+    "nvd3": "~1.8.2",
+    "angular-nvd3": "~1.0.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.3"
+  },
+  "keywords": [
+    "nodejs",
+    "bower",
+    "git",
+    "grunt",
+    "angularjs",
+    "nvd3"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "resolutions": {
+    "angular": "^1.x"
+  }
+}

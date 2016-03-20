@@ -1,14 +1,13 @@
-Plunker for this project here.http://embed.plnkr.co/jPuvCW/
-
-Read bower.json file and dependencies.
-//avoided nuget packages for that reason
-
 Author Shailesh Gavathe GIS Developer
 
 Repository contains Slides along with the souce code for NVd3 Chart, Directives, Custom Directives, Bindings, Dialog sample
 
-Excellent resources here.
-https://angular-ui.github.io/bootstrap/
+To install Bower, run the following command in the Package Manager Console
+Install-Package Bower
+
+Read bower.json file and dependencies.
+//avoided nuget packages for that reason
+
 
 For Bower and Packages information read this.
 //Install git from msysgit (msysgit.github.io)
@@ -16,3 +15,9 @@ For Bower and Packages information read this.
   //Run git from windows command prompt
 //Install BOWER using npm install -g bower
 https://msdn.microsoft.com/en-us/magazine/mt573714.aspx
+
+Excellent resources here.
+https://angular-ui.github.io/bootstrap/
+
+Plunker for this project here.
+http://embed.plnkr.co/jPuvCW/

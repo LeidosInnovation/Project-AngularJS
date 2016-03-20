@@ -1,6 +1,18 @@
 // create the module and name it app
 var app = angular.module('angularjsApp', ['ngRoute', 'ui.bootstrap', 'nvd3']); //route-routing config, nvd3-chart, bootstrap ui-dialog 
 
+//capture state change
+//will execute when page changes in SPA
+app.run(function ($rootScope) {
+
+    $rootScope.$on('$routeChangeStart', function (event, toState, toParams) {
+        console.log("route change");
+        //authentication shall happen here 
+        //build a service to authenticate
+    });
+
+});
+
 // configure our routes
 app.config(function ($routeProvider) {
     $routeProvider
@@ -33,3 +45,4 @@ app.config(function ($routeProvider) {
         })
     
 });
+

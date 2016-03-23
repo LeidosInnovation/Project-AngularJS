@@ -8,6 +8,8 @@ Install-Package Bower
 Read bower.json file and dependencies.
 //avoided nuget packages for that reason
 
+//Setup help for karma, jasmine...
+http://code.ciphertrick.com/2015/08/03/angularjs-unit-testing-tutorial-karma-jasmine/
 
 For Bower and Packages information read this.
 //Install git from msysgit (msysgit.github.io)

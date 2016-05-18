@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                     {
                         src: '*.html',
                         // the location of the resulting JS file
-                        dest: '..'
+                        dest: '/'
                     }
                    ],
                 options: {
@@ -92,7 +92,7 @@ module.exports = function (grunt) {
                     src: ['index.html'],
                     dest: '/'
                 }, {
-                    src: ['dist/**'],
+                    src: ['*.js'],
                     dest: 'dist/'
                 }, {
                     src: ['assets/**'],

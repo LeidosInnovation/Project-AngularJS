@@ -12,8 +12,11 @@ module.exports = function (config) {
           'bower_components/d3/d3.js',
           'bower_components/nvd3/build/nv.d3.js',
           'bower_components/angular-nvd3/dist/angular-nvd3.js',
-          '*.js',
-          '*.html'
+          //'*.js',
+          '*.html',
+          'dist/js/bundle*.js',
+          'node_modules/angular-mocks/angular-mocks.js',
+          'test/*.js'
         ],
         preprocessors: {
             '*.html': 'ng-html2js'

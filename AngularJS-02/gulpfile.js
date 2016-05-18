@@ -99,7 +99,7 @@ gulp.task('jshint', function () {
 
 gulp.task('test', ['build-js'], function () {
     var testFiles = [
-        './test/unit/*.js'
+        './tests/*.js'
     ];
 
     return gulp.src(testFiles)

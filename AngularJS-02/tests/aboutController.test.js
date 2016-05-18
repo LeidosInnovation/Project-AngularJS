@@ -1,27 +1,30 @@
-describe("Unit: aboutController tests", function () {
+/*global describe, it, beforeEach, inject, expect, angular*/
+(function () {
+    'use strict';
 
-    // setup code for testing this unit
-    var controller;
-    beforeEach(function () {
-        module('angularjsApp');
+    beforeEach(module('todomvc'));
 
-        inject(function ($controller) {
-            controller = $controller('aboutController');
+    describe('todoFocus directive', function () {
+        var scope, compile, browser;
+
+        beforeEach(inject(function ($rootScope, $compile, $browser) {
+            scope = $rootScope.$new();
+            compile = $compile;
+            browser = $browser;
+        }));
+
+        it('should focus on truthy expression', function () {
+            var el = angular.element('<input todo-focus="focus">');
+            scope.focus = false;
+
+            compile(el)(scope);
+            expect(browser.deferredFns.length).toBe(0);
+
+            scope.$apply(function () {
+                scope.focus = true;
+            });
+
+            expect(browser.deferredFns.length).toBe(1);
         });
-
     });
-
-    it("PASSING TEST - should be able to display a title", function () {
-        expect(controller.message).toBe('I am passed');
-    });
-
-    it("FAILING TEST - should be able to display a title", function () {
-        expect(controller.message).toBe('fail fail fail');
-    });
-
-    it("PASSING TEST - should send message and result be printed", function () {
-        controller.message = 2;
-        expect(controller.result).toEqual(4);
-    });
-
-});
+}());

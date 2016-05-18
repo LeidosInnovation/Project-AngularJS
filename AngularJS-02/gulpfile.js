@@ -124,7 +124,7 @@ gulp.task('build-js', ['clean'], function () {
         entries: './js/app.js',
         debug: true,
         paths: ['./js/controllers', './js/services', './js/directives', './js/filters',
-             'bower_components/angular/angular.js',
+          'bower_components/angular/angular.js',
           'bower_components/angular-route/angular-route.js',
           'bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js',
           'bower_components/d3/d3.js',
@@ -164,7 +164,7 @@ gulp.task('build', ['clean', 'bower', 'build-css', 'build-template-cache', 'jshi
 /////////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('watch', function () {
-    return gulp.watch(['./index.html', './partials/*.html', './bower_components/*.*css', './js/**/*.js'], ['build']);
+    return gulp.watch(['./index.html', './partials/*.html', './etc/*.*css', './bower_components/**/*.js','./js/**/*.js'], ['build']);
 });
 
 /////////////////////////////////////////////////////////////////////////////////////

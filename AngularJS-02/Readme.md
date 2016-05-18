@@ -23,3 +23,7 @@ https://angular-ui.github.io/bootstrap/
 
 Plunker for this project here.
 http://embed.plnkr.co/jPuvCW/
+
+Git commands come in handy
+https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
+

@@ -27,3 +27,7 @@ http://embed.plnkr.co/jPuvCW/
 Git commands come in handy
 https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/
 
+node express jasmine
+https://www.distelli.com/docs/tutorials/test-your-nodejs-with-jasmine
+
+
